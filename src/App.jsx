@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import Navbar from '@components/Navbar/Navbar'
-import Banner from './components/Screen/index';
+import Banner from '@components/Screen/index';
+import Masters from '@components/Masters';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
       <Navbar />
       <Banner />
+      <Masters />
     </div>
   )
 }
