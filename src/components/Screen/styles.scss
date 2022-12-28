@@ -1,6 +1,78 @@
-.home-banner {
+.main_screen {
     width: 100%;
     height: 100vh;
-    background-image: url('@images/backgroundd.png');
+    background-image: url('@images/background-darkk.png');
     background-repeat: no-repeat;
+    background-size: cover;
+
+    .main_screen__wrapper {
+        max-width: 1220px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .main_screen__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 100px;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .main_screen__content-left {
+                .ant-btn-primary {
+                    height: 54px;
+                    background-color: #b77702;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    border-radius: 28px;
+                    margin-top: 50px;
+                }
+
+                .ant-btn-primary:hover,
+                .ant-btn-primary:active,
+                .ant-btn-primary:focus {
+                    background-color: #976404;
+                    color: wheat;
+                }
+
+                .main_title__text-up {}
+            }
+
+            .main_screen__content-right {
+                img {
+                    width: 500px;
+                }
+            }
+
+
+        }
+    }
+
+    @media screen and (max-width: 955px) {
+        .main_screen__content {
+            display: flex;
+            justify-content: center!important;
+            padding-top: 50px!important;
+            .left__text {
+                text-align: center;
+            }
+
+            .button-hidden__dek {
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+            }
+            img {
+                width: 300px!important;
+            }
+        }
+    }
+
+    @media screen and (min-width: 956px) {
+        .button-hidden__mob {
+            display: none;
+        }
+    }
 }

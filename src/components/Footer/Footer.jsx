@@ -8,17 +8,6 @@ class FooterNew extends React.PureComponent {
       <footer className="footer-main">
         <div className="footer-container">
           <div className="footer-content">
-            {/* <div className="footer-content-social">
-              <a href="./">
-                <img src={instagram} className="img-effect" width={30} height={30} />
-              </a>
-              <a href="./">
-                <img src={instagram} className="img-effect" width={30} height={30} />
-              </a>
-              <a href="./">
-                <img src={instagram} className="img-effect" width={30} height={30} />
-              </a>
-            </div> */}
             <div className="footer-content-text" style={{fontSize: '18px'}}>
               Copyright ©2022 MariThai  |  Салон Тайского массажа
             </div>
