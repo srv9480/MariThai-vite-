@@ -18,7 +18,7 @@ function Navbar() {
     <header className="header">
       <div className="header__wrapper">
         <nav className="navbar">
-          <img src={logo_main} alt="logo" width="190px"
+          <img src={logo_main} alt="logo" width="160px"
             style={{ marginBottom: '.62rem', paddingLeft: '0.35rem' }}
           />
           <div className="button-hidden__mob">

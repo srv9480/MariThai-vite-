@@ -1,0 +1,134 @@
+.modal__wrapper {
+  position:fixed;
+  display:flex;
+  width:100%;
+  height:100%;
+  justify-content:center;
+  align-items:center;
+  background:rgba(0,0,0,.7);
+  z-index:100;
+ 
+    .modal-window {
+      .modal-window {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      //background-color: #1a1a1a;
+      /// opacity: 0.3;
+      animation-name: appear;
+      animation-duration: 300ms;
+      z-index: 2;
+    }
+
+    .modaldialogOpen {
+      opacity: 1 !important;
+      width: 100%;
+      height: 622px;
+      max-width: 380px;
+      background: rgb(255, 255, 255);
+      position: relative;
+      margin: 0 20px;
+      max-height: calc(100vh - 40px);
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: slide-in;
+      animation-duration: 0.5s;
+
+      .modaltitle {
+        text-align: center;
+      }
+    }
+
+    .modalheader,
+    .modalfooter {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      padding-bottom: 0.1rem !important;
+    }
+
+    .modalheader {
+      // border-bottom: 1px solid #dbdbdb;
+      justify-content: space-between;
+    }
+
+    .modalfooter {
+      border-top: 1px solid #dbdbdb;
+      justify-content: flex-end;
+    }
+
+    .modalclose {
+      cursor: pointer;
+      padding: 1rem;
+      margin: -1rem -1rem -1rem auto;
+
+      .abl {
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+
+        .abm0 {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+
+          .ab6 {
+            display: block;
+            position: relative;
+          }
+        }
+      }
+    }
+
+    .modalbody {
+      overflow: auto;
+    }
+
+    // .modalcontent {
+    //   padding: 1rem;
+    // }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-in {
+      from {
+        transform: translateY(-150px);
+      }
+
+      to {
+        transform: translateY(0);
+      }
+    }
+  }
+  .overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+}
